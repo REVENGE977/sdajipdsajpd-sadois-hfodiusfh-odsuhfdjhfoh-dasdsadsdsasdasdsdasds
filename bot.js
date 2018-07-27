@@ -62,7 +62,7 @@ gg.send({embed : new Discord.RichEmbed()//By Codes , - ST I EdiTeD , .#4968//By 
 
 
         let ownerrole = msg.guild.roles.find('name', 'Manager', 'High Management', '<<♛ The-King ♛>>', 'Admin');
-        if (command == 'accept') {
+        if (command == 'deny') {
           if (!msg.member.roles.has(ownerrole)) return;
           let person = msg.mentions.members.first()
           if (!person) return msg.reply(`عليك بمنشن احد الاشخاص`)
