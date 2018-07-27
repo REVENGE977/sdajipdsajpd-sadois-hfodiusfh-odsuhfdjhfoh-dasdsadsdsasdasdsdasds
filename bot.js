@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
- const prefix = "$";
+ const prefix = "#";
 
 
 
@@ -91,13 +91,7 @@ gg.send({embed : new Discord.RichEmbed()
 
 
 
-const Discord = require('discord.js');
-const client = new Discord.Client();
-const prefix = '#'
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
 
 
 
@@ -875,7 +869,6 @@ client.on('message', message => {
   }
   });
 
-client.login('NDYyNjE3NDE5MTUyNzUyNjQx.DhkdmA.zDnkxioefP01lev76pMBrR7cEzQ');
 
 
 
