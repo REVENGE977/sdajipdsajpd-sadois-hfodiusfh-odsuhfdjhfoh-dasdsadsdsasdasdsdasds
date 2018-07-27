@@ -7,38 +7,38 @@ const client = new Discord.Client();
 
 
 
-client.on('message', async message => {
-  if(message.content.startsWith(prefix + "تقديم")) {
-    await message.channel.send("**:writing_hand: ماهي المده التي تدخل فيها الدسكورد (كل يوم ,كل يومين . كل سبوع)و **").then(e => {
+client.on('message', async message => {//By Codes , - ST I EdiTeD , .#4968
+  if(message.content.startsWith(prefix + "تقديم")) {//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968
+    await message.channel.send("**:writing_hand: ارسل اللغة البرمجة الآن **").then(e => {
     let filter = m => m.author.id === message.author.id
     let lan = '';
-    let md = '';
-    let br = '';
+    let md = '';//By Codes , - ST I EdiTeD , .#4968
+    let br = '';//By Codes , - ST I EdiTeD , .#4968
     let chaLan = message.channel.awaitMessages(filter, { max: 1, time: 40000, errors: ['time'] })
     .then(collected => {
       lan = collected.first().content
       collected.first().delete()
-e.edit(`**مده استعمالك للدسكورد**`)
+e.edit(`**:ارسل مدة خبرتك الان**`)
 let chaMd = message.channel.awaitMessages(filter, { max: 1, time: 40000, errors: ['time'] })
-.then(co => {
+.then(co => {//By Codes , - ST I EdiTeD , .#4968
   md = co.first().content
-        co.first().delete()
-        e.edit(`**معك مايك ؟**`)
-let br = message.channel.awaitMessages(filter, { max: 1, time: 40000, errors: ['time'] })
+        co.first().delete()//By Codes , - ST I EdiTeD , .#4968
+        e.edit(`**ارسل م تعرف بهذه اللغة الان**`)
+let br = message.channel.awaitMessages(filter, { max: 1, time: 40000, errors: ['time'] })//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968
 .then(col => {
   br = col.first().content
         col.first().delete()
-e.edit("**جاري التقديم علي طلبك...**").then(b => {
+e.edit("**جاري التقديم علي طلبك...**").then(b => {//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968
         setTimeout(() => {
   b.edit(`**تم التقديم وسيتم الرد فـ اقرب وقت**`)
         },2000);
-var gg = message.guild.channels.find('name', 'التقديمات')
-if(!gg) return;
+var gg = message.guild.channels.find('name', 'submit-now')
+if(!gg) return;//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968
 if(gg) {
-gg.send({embed : new Discord.RichEmbed()
-.setDescription(`**المده التي يدخل فيها الدسكورد : \n ${lan}\n مده دخولك للدسكورد :\n ${md} \n معه مايك ؟ :\n ${br}  **`)  
-          .setFooter(`Codes.`)
-.setTimestamp()
+gg.send({embed : new Discord.RichEmbed()//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968
+.setDescription(`**اللغة البرمجية : \n ${lan}\n مدة ممارسة هذه اللغة :\n ${md} \nالخبرة  :\n ${br}  **`)  
+          .setFooter(`Codes.`)//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968
+.setTimestamp()//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968
 });
 }        
 })
@@ -46,8 +46,7 @@ gg.send({embed : new Discord.RichEmbed()
 })
 })
 })
-}
-
+ }
 
 
 
@@ -55,9 +54,9 @@ gg.send({embed : new Discord.RichEmbed()
   let mention = message.mentions.members.first();
   let role = message.content.split(" ").slice(2).join(" ");
   let mySupport = message.guild.roles.find('name',role);
-  let acRoom = client.channels.get('470661995255955477');
+  let acRoom = client.channels.get('472413008619110419');
   if(message.content.startsWith(prefix + "قبول")) {
-    if(message.guild.id !== '455577214348427264') return;
+    if(message.guild.id !== '472413008619110419') return;
     if(!message.guild.member(message.author).hasPermission("MANAGE_ROLES")) return;
     if(!mention) return message.reply('منشن شخص');
     if(!role) return message.reply('ادخل اسم رتبة');
@@ -74,9 +73,9 @@ gg.send({embed : new Discord.RichEmbed()
 
   client.on('message',async message => {
   let mention = message.mentions.members.first();
-  let acRoom = client.channels.get('470661995255955477');
+  let acRoom = client.channels.get('472413008619110419');
   if(message.content.startsWith(prefix + "رفض")) {
-  if(message.guild.id !== '455577214348427264') return;
+  if(message.guild.id !== '472413008619110419') return;
   if(!message.guild.member(message.author).hasPermission("MANAGE_ROLES")) return;
   if(!mention) return message.reply("منشن شخص");
 
