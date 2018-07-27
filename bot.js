@@ -50,12 +50,12 @@ gg.send({embed : new Discord.RichEmbed()//By Codes , - ST I EdiTeD , .#4968//By 
 
 
 
-        let ownerrole = msg.guild.roles.find('name', 'Manager', 'High Management', '<<♛ The-King ♛>>', 'Admin');
+        let ownerrole = message.guild.roles.find('name', 'Manager', 'High Management', '<<♛ The-King ♛>>', 'Admin');
          if(message.content.startsWith(prefix + "accept")) {
-          if (!msg.member.roles.has(ownerrole)) return;
-          let person = msg.mentions.members.first()
-          if (!person) return msg.reply(`عليك بمنشن احد الاشخاص`)
-          msg.reply(`تم قبول الشخص بنجاح`)
+          if (!message.member.roles.has(ownerrole)) return;
+          let person = message.mentions.members.first()
+          if (!person) return message.reply(`عليك بمنشن احد الاشخاص`)
+          message.reply(`تم قبول الشخص بنجاح`)
           person.addRole('472434447715926026').catch(console.error);
         }
 
@@ -63,10 +63,10 @@ gg.send({embed : new Discord.RichEmbed()//By Codes , - ST I EdiTeD , .#4968//By 
 
         
          if(message.content.startsWith(prefix + "deny")) {
-          if (!msg.member.roles.has(ownerrole)) return;
-          let person = msg.mentions.members.first()
-          if (!person) return msg.reply(`عليك بمنشن احد الاشخاص`)
-          msg.reply(`تم رفض الشخص بنجاح`)
+          if (!message.member.roles.has(ownerrole)) return;
+          let person = message.mentions.members.first()
+          if (!person) return message.reply(`عليك بمنشن احد الاشخاص`)
+          message.reply(`تم رفض الشخص بنجاح`)
           
         }
 
