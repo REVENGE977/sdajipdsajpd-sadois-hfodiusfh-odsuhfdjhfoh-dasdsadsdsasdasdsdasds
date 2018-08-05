@@ -881,23 +881,5 @@ client.on('message', message => {
 
 
 
-client.on('voiceStateUpdate', (old, now) => {
-  const channel = client.channels.get('472418091058331650');
-  const currentSize = channel.guild.members.filter(m => m.voiceChannel).size;
-  const size = channel.name.match(/\[\s(\d+)\s\]/);
-  if (!size) return channel.setName(`Voice Online「${currentSize}」`);
-  if (currentSize !== size) channel.setName(`Voice Online「${currentSize}」`);
-});
-})
-client.on('message', message => {
-client.on('voiceStateUpdate', (old, now) => {
-    const channel = client.channels.get('475730153201336320')
-    const allplayer = message.guild.memberCount
-    const size = channel.name.match(/\[\s(\d+)\s\]/);
-    if (!size) return channel.setName(`Users: [ ${message.guild.memberCount} ]`);
-    if (allplayer !== size) channel.setName(`Users: [ ${message.guild.memberCount} ]`);
-  });
-
-})
 
 client.login(process.env.BOT_TOKEN)
