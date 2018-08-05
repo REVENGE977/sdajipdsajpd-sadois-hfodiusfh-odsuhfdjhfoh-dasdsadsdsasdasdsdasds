@@ -873,4 +873,6 @@ client.on('voiceStateUpdate', (old, now) => {
     if (allplayer !== size) channel.setName(`Users: [ ${message.guild.memberCount} ]`);
   });
 
+})
+
 client.login(process.env.BOT_TOKEN)
