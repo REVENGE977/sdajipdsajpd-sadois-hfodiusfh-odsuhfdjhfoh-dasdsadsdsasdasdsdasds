@@ -866,5 +866,13 @@ client.on('voiceStateUpdate', (old, now) => {
 });
 })
 
+client.on('voiceStateUpdate', (old, now) => {
+  const channel = client.channels.get('472417985047560193');
+  const online = ${msg.guild.members.filter(m=>m.presence.status == 'online').size}
+  const size = channel.name.match(/\[\s(\d+)\s\]/);
+  if (!size) return channel.setName(`Voice Online: [ ${online} ]`);
+  if (online !== size) channel.setName(`Voice Online: [ ${online} ]`);
+});
+
 
 client.login(process.env.BOT_TOKEN)
