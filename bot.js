@@ -91,6 +91,7 @@ let embed = new Discord.RichEmbed()
 .addField('     **#help-js-welcome** ' , '**قسم اكواد الترحيب**')
 .addField('     **#help-js-help** ' ,' ** قسم اكواد الهلب**')
 .addField('     ** #help-js-bc** ' , '**قسم اكواد البرودكاست**')
+.addField('     ** اكواد اكسبورت قريبا ** ')
 .setColor('RANDOM')
 message.channel.sendEmbed(embed);
 }
