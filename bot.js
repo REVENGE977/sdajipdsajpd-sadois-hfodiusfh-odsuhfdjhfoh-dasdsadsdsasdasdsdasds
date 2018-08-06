@@ -46,8 +46,8 @@ let embed = new Discord.RichEmbed()
 .addField('     **#help-js-general** ' , '**قسم اكواد العامة**')
 .addField('     **#help-js-welcome** ' , '**قسم اكواد الترحيب**')
 .addField('     **#help-js-help** ' ,' ** قسم اكواد الهلب**')
-.addField('     ** #help-js-bc** ' , '**قسم اكواد البرودكاست**')
-.addField('     ** اكواد اكسبورت قريبا ** ')
+.addField('     **#help-js-bc** ' , '**قسم اكواد البرودكاست**')
+.addField('     **#help-js-export** ' , '**قسم اكواد الاكسبورت**')
 .setColor('RANDOM')
 message.channel.sendEmbed(embed);
 }
@@ -68,6 +68,8 @@ let embed = new Discord.RichEmbed()
 .addField('     **#help-js-admin-7** ' , '**invite : كود دعوه البوت مثال**')
 .addField('     **#help-js-admin-8** ' , '**كود رابط يرسله خاص ل 100شخص لمدة 24 ساعه**')
 .addField('     **#help-js-admin-9** ' , '**كود مسح الشات بالرياكشن**')
+.addField('     **#help-js-admin-10** ' , '**كود ميوت مؤقت**')
+.addField('     **#help-js-admin-11** ' , '**كود باند مؤقت**')
 .setColor('RANDOM')
 message.channel.sendEmbed(embed);
 
@@ -250,6 +252,7 @@ https://hastebin.com/tebizoruru.php
 
 
 
+
 client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-admin-9") {
@@ -263,6 +266,42 @@ client.on('message', message => {
 كود مسح الشات بالرياكشن
 https://hastebin.com/nacegagoza.coffeescript
 
+`);
+
+    }
+});
+
+client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-admin-10") {
+		 message.channel.send('**تم ارسال الكود في الخاص**');
+
+
+
+
+
+ message.author.sendMessage(`
+ **
+كود ميوت مؤقت
+ https://hastebin.com/quyatapica.js
+`);
+
+    }
+});
+
+client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-admin-11") {
+		 message.channel.send('**تم ارسال الكود في الخاص**');
+
+
+
+
+
+ message.author.sendMessage(`
+ **
+كود باند مؤقت
+https://hastebin.com/cunesihava.js
 `);
 
     }
@@ -786,6 +825,178 @@ message.channel.sendEmbed(embed);
     });
 
 
+client.on('message', message => {
+    if (message.content.startsWith(prefix + "help-js-admin")) {
+let embed = new Discord.RichEmbed()
+.setThumbnail(message.author.avatarURL)
+.addField('     **#help-js-export-1 ** ' ,' **كود الميوت المؤقت مطور ** ')
+.addField('     **#help-js-export-2 **  ' ,' **كود الكيك** ')
+.addField('     **#help-js-export-3 ** ' , '**كود مسح الشات**')
+.addField('     **#help-js-export-4** ' , '**كود ساي**')
+.addField('     **#help-js-export-5** ' , '**كود اعطاء شخص رتبه وازالتها**')
+.addField('     **#help-js-export-6** ' , '**كود تغيير البريفكس**')
+.addField('     **#help-js-exports-7** ' , '**كود ابلاغ او ريبورت**')
+.addField('     **#help-js-exports-8** ' , '**كود معلومات السيرفر**')
+.addField('     **#help-js-exports-9** ' , '**كود معلومات البوت**')
+.addField('     **#help-js-exports-10** ' , '**كود كود الباند (مو مؤقت)ا**')
+.setColor('RANDOM')
+message.channel.sendEmbed(embed);
+
+client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-exports-1") {
+         message.channel.send('**تم ارسال الكود في الخاص**');
+
+
+     message.author.sendMessage(`
+ **
+كود ميوت مؤقت مطور
+https://pastebin.com/jFzE21fF
+`);
+
+    }
+});
+
+
+client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-exports-2") {
+         message.channel.send('**تم ارسال الكود في الخاص**');
+
+
+     message.author.sendMessage(`
+ **
+كود كيك
+https://pastebin.com/Taa2kJqN
+`);
+
+    }
+});
+
+client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-exports-3") {
+         message.channel.send('**تم ارسال الكود في الخاص**');
+
+
+     message.author.sendMessage(`
+ **
+كود مسح الشات
+https://pastebin.com/c2sANeL5
+`);
+
+    }
+});
+
+
+client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-exports-4") {
+         message.channel.send('**تم ارسال الكود في الخاص**');
+
+
+     message.author.sendMessage(`
+ **
+كود ساي
+https://pastebin.com/WssE8ywy
+`);
+
+    }
+});
+
+client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-exports-5") {
+         message.channel.send('**تم ارسال الكود في الخاص**');
+
+
+     message.author.sendMessage(`
+ **
+كود اعطاء رتبه لشخص
+ https://pastebin.com/qwCv3VjR
+ كود ازاله رتبه من شخص
+ https://pastebin.com/Ge0eEJDP
+
+`);
+
+    }
+});
+
+
+client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-exports-6") {
+         message.channel.send('**تم ارسال الكود في الخاص**');
+
+
+     message.author.sendMessage(`
+ **
+كود تغيير البريفكس
+https://pastebin.com/zMDVLzCK
+`);
+
+    }
+});
+
+client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-exports-7") {
+         message.channel.send('**تم ارسال الكود في الخاص**');
+
+
+     message.author.sendMessage(`
+ **
+كود تغيير البريفكس
+https://pastebin.com/NAfv1UbN
+`);
+
+    }
+});
+
+client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-exports-8") {
+         message.channel.send('**تم ارسال الكود في الخاص**');
+
+
+     message.author.sendMessage(`
+ **
+كود معلومات السيرفر
+ https://pastebin.com/wYrXx2Be
+`);
+
+    }
+});
+
+client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-exports-9") {
+         message.channel.send('**تم ارسال الكود في الخاص**');
+
+
+     message.author.sendMessage(`
+ **
+كود معلومات البوت
+https://pastebin.com/CcWedMQf
+`);
+
+    }
+});
+
+client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-exports-10") {
+         message.channel.send('**تم ارسال الكود في الخاص**');
+
+
+     message.author.sendMessage(`
+ **
+كود باند غير مؤقت
+ https://hastebin.com/qiwigejulo.js
+`);
+
+    }
+});
 
     const devs = ['429972030092476437' , '' , '' , ''];
 const adminprefix = "#";
