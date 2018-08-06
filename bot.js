@@ -299,7 +299,7 @@ client.on('message', message => {
  message.author.sendMessage(`
  **
 السورس الاساسي
- https://hastebin.com/gehajebafi.coffeescript
+ https://pastebin.com/kaQvjHe5
 
 
 
