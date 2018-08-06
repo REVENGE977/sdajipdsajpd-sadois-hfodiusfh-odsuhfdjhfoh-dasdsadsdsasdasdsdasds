@@ -826,15 +826,15 @@ message.channel.sendEmbed(embed);
 
 
 client.on('message', message => {
-    if (message.content.startsWith(prefix + "help-js-admin")) {
+    if (message.content.startsWith(prefix + "help-js-exports")) {
 let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)
-.addField('     **#help-js-export-1 ** ' ,' **كود الميوت المؤقت مطور ** ')
-.addField('     **#help-js-export-2 **  ' ,' **كود الكيك** ')
-.addField('     **#help-js-export-3 ** ' , '**كود مسح الشات**')
-.addField('     **#help-js-export-4** ' , '**كود ساي**')
-.addField('     **#help-js-export-5** ' , '**كود اعطاء شخص رتبه وازالتها**')
-.addField('     **#help-js-export-6** ' , '**كود تغيير البريفكس**')
+.addField('     **#help-js-exports-1 ** ' ,' **كود الميوت المؤقت مطور ** ')
+.addField('     **#help-js-exports-2 **  ' ,' **كود الكيك** ')
+.addField('     **#help-js-exports-3 ** ' , '**كود مسح الشات**')
+.addField('     **#help-js-exports-4** ' , '**كود ساي**')
+.addField('     **#help-js-exports-5** ' , '**كود اعطاء شخص رتبه وازالتها**')
+.addField('     **#help-js-exports-6** ' , '**كود تغيير البريفكس**')
 .addField('     **#help-js-exports-7** ' , '**كود ابلاغ او ريبورت**')
 .addField('     **#help-js-exports-8** ' , '**كود معلومات السيرفر**')
 .addField('     **#help-js-exports-9** ' , '**كود معلومات البوت**')
