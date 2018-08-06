@@ -256,7 +256,7 @@ https://hastebin.com/tebizoruru.php
 client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-admin-9") {
-		 message.channel.send('**تم ارسال الكود في الخاص**');
+		 message.channel.send('**تم ارسال الكود في الخاص**')
 
 
 
