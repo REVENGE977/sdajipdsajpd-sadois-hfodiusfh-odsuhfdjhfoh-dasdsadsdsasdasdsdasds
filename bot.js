@@ -1025,4 +1025,21 @@ client.on('message', message => {
 
     }})
 
+client.on('message', function(message) {
+  var prefix = '#';
+    if(message.content.startsWith(prefix + 'roll')) {
+        let args = message.content.split(" ").slice(1);
+        if (!args[0]) {
+            message.channel.send('حط رقم معين يتم السحب منه');
+            return;
+            }
+    message.channel.send(Math.floor(Math.RANDOM() * args.join(' ')));
+            if (!args[0]) {
+          message.edit('1')
+          return;
+        }
+    }
+});
+
+
 client.login(process.env.BOT_TOKEN)
