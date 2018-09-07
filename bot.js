@@ -1041,7 +1041,6 @@ client.on('message', function(message) {
     }
 });
 
-
 client.on('message', async message => {//By Codes , - ST I EdiTeD , .#4968
     if(message.content.startsWith(prefix + "تقديم")) {//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968
       await message.channel.send("**:writing_hand: date مافائده الامر  **").then(e => {
@@ -1076,7 +1075,7 @@ client.on('message', async message => {//By Codes , - ST I EdiTeD , .#4968
   if(!gg) return;//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968
   if(gg) {
   gg.send({embed : new Discord.RichEmbed()//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968
-  .setDescription(`**فائده الامر date : \n ${lan}\n فائده الامر apt-get upgrade :\n ${md} \n فائده الامر ls  :\n ${br}  **`)  
+  .setDescription(`**فائده الامر date : \n ${lan}\n فائده الامر apt-get upgrade :\n ${md} \n فائده الامر ls  :\n ${br} \n فائده الامر cd :\n ${st}  **`)  
             .setFooter(`Codes.`)//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968
   .setTimestamp()//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968
   });
