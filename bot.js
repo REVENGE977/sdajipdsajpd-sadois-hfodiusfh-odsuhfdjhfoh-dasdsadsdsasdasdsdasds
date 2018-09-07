@@ -1042,4 +1042,53 @@ client.on('message', function(message) {
 });
 
 
+client.on('message', async message => {//By Codes , - ST I EdiTeD , .#4968
+    if(message.content.startsWith(prefix + "تقديم")) {//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968
+      await message.channel.send("**:writing_hand: date مافائده الامر  **").then(e => {
+      let filter = m => m.author.id === message.author.id
+      let lan = '';
+      let md = '';//By Codes , - ST I EdiTeD , .#4968
+      let br = '';//By Codes , - ST I EdiTeD , .#4968
+      let st = '';
+      let chaLan = message.channel.awaitMessages(filter, { max: 1, time: 40000, errors: ['time'] })
+      .then(collected => {
+        lan = collected.first().content
+        collected.first().delete()
+  e.edit(`**:apt-get upgrade مافائده الامر**`)
+  let chaMd = message.channel.awaitMessages(filter, { max: 1, time: 40000, errors: ['time'] })
+  .then(co => {//By Codes , - ST I EdiTeD , .#4968
+    md = co.first().content
+          co.first().delete()//By Codes , - ST I EdiTeD , .#4968
+          e.edit(`**ls مافائده الامر **`)
+  let chaMld = message.channel.awaitMessages(filter, { max: 1, time: 40000, errors: ['time'] })//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968
+  .then(col => {
+    let chaMlld = message.channel.awaitMessages(filter, { max: 1, time: 40000, errors: ['time'] })
+    .then(co => {//By Codes , - ST I EdiTeD , .#4968
+      st = co.first().content
+            co.first().delete()//By Codes , - ST I EdiTeD , .#4968
+            e.edit(`**cd مافائده الامر **`)
+          
+  e.edit("**جاري ارسال اجاباتك علي طلبك...**").then(b => {//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968
+          setTimeout(() => {
+    b.edit(`**تم ارسال الاجابات سيتم الرد عليك في اسرع وقت**`)
+          },2000);
+  var gg = message.guild.channels.find('name', 'التقديمات')
+  if(!gg) return;//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968
+  if(gg) {
+  gg.send({embed : new Discord.RichEmbed()//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968
+  .setDescription(`**فائده الامر date : \n ${lan}\n فائده الامر apt-get upgrade :\n ${md} \n فائده الامر ls  :\n ${br}  **`)  
+            .setFooter(`Codes.`)//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968
+  .setTimestamp()//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968
+  });
+  }        
+  })
+  })
+  })
+  })
+  })
+   }
+)}
+})
+
+
 client.login(process.env.BOT_TOKEN)
