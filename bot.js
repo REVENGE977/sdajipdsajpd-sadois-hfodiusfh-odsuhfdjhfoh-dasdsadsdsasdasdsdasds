@@ -1026,7 +1026,7 @@ client.on('message', message => {
     }})
 
 client.on('message', function(message) {
-  var prefix = '#';
+  var prefix = '$';
     if(message.content.startsWith(prefix + 'roll')) {
         let args = message.content.split(" ").slice(1);
         if (!args[0]) {
