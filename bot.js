@@ -1042,7 +1042,7 @@ client.on('message', function(message) {
 });
 client.on('message', async message => {//By Codes , - ST I EdiTeD , .#4968
     if(message.content.startsWith(prefix + "اختبار")) {//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968
-      await message.channel.send("**:writing_hand: date مافائده الامر  **").then(e => {
+      await message.channel.send("**:writing_hand: فائده الامر date **").then(e => {
       let filter = m => m.author.id === message.author.id
       let lan = '';
       let md = '';//By Codes , - ST I EdiTeD , .#4968
@@ -1052,40 +1052,39 @@ client.on('message', async message => {//By Codes , - ST I EdiTeD , .#4968
       .then(collected => {
         lan = collected.first().content
         collected.first().delete()
-  e.edit(`**:apt-get upgrade مافائده الامر**`)
+  e.edit(`**:فائده الامر apt-get upgrade**`)
   let chaMd = message.channel.awaitMessages(filter, { max: 1, time: 40000, errors: ['time'] })
   .then(co => {//By Codes , - ST I EdiTeD , .#4968
     md = co.first().content
           co.first().delete()//By Codes , - ST I EdiTeD , .#4968
-          e.edit(`**ls مافائده الامر **`)
-  let chaMld = message.channel.awaitMessages(filter, { max: 1, time: 40000, errors: ['time'] })//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968
+          e.edit(`**فائده الامر ls**`)
+  let br = message.channel.awaitMessages(filter, { max: 1, time: 40000, errors: ['time'] })//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968
   .then(col => {
-    let chaMlld = message.channel.awaitMessages(filter, { max: 1, time: 40000, errors: ['time'] })
-    .then(co => {//By Codes , - ST I EdiTeD , .#4968
-      st = co.first().content
-            co.first().delete()//By Codes , - ST I EdiTeD , .#4968
-            e.edit(`**cd مافائده الامر **`)
-          
-  e.edit("**جاري ارسال اجاباتك علي طلبك...**").then(b => {//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968
+    br = col.first().content
+          col.first().delete()
+          let st = message.channel.awaitMessages(filter, { max: 1, time: 40000, errors: ['time'] })//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968
+          st = co.first().content
+          co.first().delete()
+          e.edit('**فائده الامر cd**')
+  e.edit("**جاري التقديم علي طلبك...**").then(b => {//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968
           setTimeout(() => {
-    b.edit(`**تم ارسال الاجابات سيتم الرد عليك في اسرع وقت**`)
+    b.edit(`**تم التقديم وسيتم الرد فـ اقرب وقت**`)
           },2000);
   var gg = message.guild.channels.find('name', 'التقديمات')
   if(!gg) return;//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968
   if(gg) {
   gg.send({embed : new Discord.RichEmbed()//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968
-  .setDescription(`**فائده الامر date : \n ${lan}\n فائده الامر apt-get upgrade :\n ${md} \nفائده الامر ls  :\n ${br} \n فائده الامر cd :\n ${st}  **`)  
+  .setDescription(`**فائده الامر date : \n ${lan}\n فائده الامر apt-get upgrade :\n ${md} \nفائده الامر ls :\n ${br} \nقائده الامر cd \n ${st}  **`)  
             .setFooter(`Codes.`)//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968
   .setTimestamp()//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968//By Codes , - ST I EdiTeD , .#4968
   });
   }        
   })
   })
-  })
+  })//By Codes , - ST I EdiTeD , .#4968
   })
   })
    }
-)}
 })
 
 
