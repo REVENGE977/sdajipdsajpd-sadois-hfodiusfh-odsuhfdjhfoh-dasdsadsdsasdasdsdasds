@@ -1045,6 +1045,7 @@ client.on('message', function(message) {
 // Alpha Codes,// Alpha Codes,// Alpha Codes
 client.on('message', async message => {
     var command = message.content.toLowerCase().split(" ")[0];
+    var prefix = '!!';// Alpha Codes
     var name = '';// Alpha Codes
     var age = '';// Alpha Codes
     var fromwhere = '';// Alpha Codes
@@ -1118,8 +1119,8 @@ client.on('message', async message => {
                                                 subChannel.send(subMsg).then(msgS => {
                                                     msgS.react('✅').then(() => msgS.react('❎'))
                                                    
-                                                    let accept = (reaction, user) => reaction.emoji.name === '✅'  
-                                                    let noAccept = (reaction, user) => reaction.emoji.name === '❎' 
+                                                    let accept = (reaction, user) => reaction.emoji.name === '✅'  && user.id === '429972030092476437'
+                                                    let noAccept = (reaction, user) => reaction.emoji.name === '❎' && user.id === '429972030092476437'
                                                    
                                                     let acceptRe = msgS.createReactionCollector(accept);
                                                     let noAcceptRe = msgS.createReactionCollector(noAccept);
