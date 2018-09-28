@@ -33,6 +33,61 @@ client.on('ready', () => {
 
 
 
+client.on('message', async message => {  
+    if(message.content.startsWith(prefix + "sharejs")) {   
+      if(message.channel.name !== 'sharejs') return message.reply('يجب كتابه الامر في روم باسم sharejs')
+      await message.channel.send("**:writing_hand: ارسل الكود الان **").then(e => {
+      let filter = m => m.author.id === message.author.id
+      let lan = '';
+      let md = '';  
+      let br = '';  
+      let chaLan = message.channel.awaitMessages(filter, { max: 1, time: 40000, errors: ['time'] })
+      .then(collected => {
+        lan = collected.first().content
+        collected.first().delete()
+  e.edit(`**:writing_hand: اكتب وصف الكود الان**`)
+  let chaMd = message.channel.awaitMessages(filter, { max: 1, time: 40000, errors: ['time'] })
+  .then(co => {  
+    md = co.first().content
+          co.first().delete()  
+          e.edit(`**:writing_hand: ارسل المصدر او صانع الكود**`)
+  let br = message.channel.awaitMessages(filter, { max: 1, time: 40000, errors: ['time'] })    
+  .then(col => {
+    br = col.first().content
+          col.first().delete()
+  e.edit("**جاري النشر ...**").then(b => {    
+          setTimeout(() => {
+    b.edit(`**تم النشر بنجاح**`)
+          },2000);
+  let gg = message.guild.channels.find('name', 'codes-js')
+  if(!gg) return message.reply('لا يوجد روم باسم codes-js')
+  if(gg) {
+  gg.send(`
+  @everyone | @here 
+  =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  ${message.guild.name}© :arrow_down:
+  ${lan}
+
+  =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  
+  **وصف الكود:** ${md}
+  **تم النشر بواسطة:** ${message.author.tag} With ID ${message.author.id}
+  **المصدر / الشخص يلي صنع الكود:** ${br}
+  
+  
+  
+  
+  
+  `)
+  }
+}
+)}
+  )}
+)}
+      )}
+    )}
+})
+
 
 
 
