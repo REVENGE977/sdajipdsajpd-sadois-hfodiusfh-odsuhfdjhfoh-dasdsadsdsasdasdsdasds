@@ -94,7 +94,7 @@ client.on('message',async message => {
             collected.first().delete();
             jscodes.send(`@everyone | @here
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-**Tesla Codes© :arrow_down:**            
+**${message.guild.name}© :arrow_down:**            
 \`\`\`js
 ${thisMessage}\`\`\`
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
